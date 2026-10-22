@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#dedede" />
+    <meta name="description" content="Sharjeel Ahmed Shaikh builds practical AI applications with Python, FastAPI, and modern AI models. Working student at HPI and MSc Data Science student in Berlin / Potsdam." />
+    <title>Sharjeel Ahmed Shaikh — AI Software Engineer</title>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark'
+          ? savedTheme
+          : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch {
+        document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css?v=19" />
+    <script src="theme.js?v=3" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="wordmark" href="#top" aria-label="Sharjeel Ahmed Shaikh, back to top">Sharjeel Ahmed Shaikh</a>
+        <nav aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#research">Research</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <svg class="theme-icon theme-icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z" /></svg>
+          <svg class="theme-icon theme-icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Building practical AI applications.</h1>
+          <p class="hero-lead">I build Python APIs, data pipelines, and interfaces around AI models—from computer vision to document intelligence.</p>
+          <div class="hero-facts" aria-label="Current role and focus"><span>Berlin / Potsdam · English C1 · German B1</span><span>MSc Data Science, University of Potsdam · Expected 2027</span></div>
+          <p class="availability">Open to working-student, internship, and AI engineering opportunities in Berlin or remote within Germany.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Explore my work</a>
+            <a class="text-link" href="mailto:sharjeelshaikh509@gmail.com">Get in touch</a>
+          </div>
+        </div>
+        <figure class="hero-profile">
+          <img class="profile-art" src="assets/waving-pose.png" width="1254" height="1254" alt="An upper-body pose skeleton made of connected landmarks, waving hello." decoding="async" fetchpriority="high" />
+        </figure>
+      </section>
+
+      <section class="section wrap" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">AI applications,<br />built across the stack.</h2></div>
+          <p>Selected work in Python APIs, data processing, usable interfaces, and model evaluation.</p>
+        </div>
+        <div class="work-list">
+          <article class="work-card">
+            <div class="work-index">01</div>
+            <div class="work-main"><p class="work-type">HPI · WORKING-STUDENT ROLE</p><h3>SMASH: multimodal video analytics</h3><p>An open-source platform for social sciences and humanities researchers to study gesture, posture, speech, and video through one interface. It makes multimodal behavioral analysis accessible to researchers who don't write code, alongside privacy-preserving data workflows.</p><p class="contribution"><strong>My contribution.</strong> I built the FastAPI services, Next.js interfaces, data pipelines, and Docker-based deployment, including processing infrastructure for 3,000+ multilingual videos.</p><div class="tags"><span>FastAPI</span><span>Next.js</span><span>Docker</span></div><a class="work-link" href="https://github.com/ShaddAhmed14/smash" target="_blank" rel="noopener noreferrer">View project code</a><figure class="project-media">
+                <video controls muted playsinline preload="none" width="800" height="364" poster="assets/smash_analytics.webp" aria-label="SMASH analytics module: exploring gesture features and linked video clips.">
+                  <source src="assets/smash_analytics.mp4" type="video/mp4" />
+                  <a href="assets/smash_analytics.mp4">Download the project demonstration</a>.
+                </video>
+                <figcaption>SMASH analytics module: exploring gesture features and linked video clips.</figcaption>
+              </figure></div>
+          </article>
+          <article class="work-card">
+            <div class="work-index">02</div>
+            <div class="work-main">
+              <p class="work-type">PERSONAL PROJECT · LOCAL DOCUMENT QA APPLICATION</p>
+              <h3>Document QA with inspectable sources</h3>
+              <p>A question-answering application for multiple PDFs, including text, tables, and figures, with answers linked to the original source pages.</p>
+              <p class="contribution"><strong>My contribution.</strong> I built the application across a FastAPI backend, document parsing and vector retrieval, and a Streamlit interface for inspecting cited pages. It supports Ollama for local chat and embeddings; table and figure descriptions use Gemini.</p>
+              <div class="tags"><span>Python / FastAPI</span><span>LangChain</span><span>Docling</span><span>Chroma</span><span>Streamlit</span><span>Ollama</span></div>
+              <a class="work-link" href="https://github.com/ShaddAhmed14/multi_modal_rag" target="_blank" rel="noopener noreferrer">View project code</a>
+              <details class="project-flow">
+                <summary>Architecture and engineering notes</summary>
+                <div class="rag-architecture" aria-label="Document QA architecture">
+                  <p class="architecture-label">Document ingestion</p>
+                  <ol class="architecture-steps">
+                    <li><strong>Upload PDFs</strong><span>Streamlit interface → FastAPI</span></li>
+                    <li><strong>Parse and describe</strong><span>Docling extracts content; Gemini describes tables and figures</span></li>
+                    <li><strong>Chunk and embed</strong><span>Contextual chunks with headings and page metadata</span></li>
+                    <li><strong>Store the index</strong><span>Persistent Chroma vectors and SQLite document records</span></li>
+                  </ol>
+                  <p class="architecture-label">Question answering</p>
+                  <ol class="architecture-steps">
+                    <li><strong>Ask a question</strong><span>FastAPI loads the session's chat history</span></li>
+                    <li><strong>Retrieve passages</strong><span>Chroma returns the three most relevant chunks</span></li>
+                    <li><strong>Generate an answer</strong><span>LangChain assembles context for Ollama or Google models</span></li>
+                    <li><strong>Inspect the evidence</strong><span>Source references open the corresponding PDF page</span></li>
+                  </ol>
+                </div>
+                <dl class="engineering-notes">
+                  <dt>Traceable sources</dt><dd>Chunks retain the source document, headings, and page numbers. The interface displays retrieved references beside the answer so readers can check the original page.</dd>
+                  <dt>Persistent state</dt><dd>Chroma stores the vector index; SQLite stores document records and chat history. FastAPI exposes upload, list, delete, chat, and PDF retrieval endpoints.</dd>
+                  <dt>Reusable processing</dt><dd>Document conversions, table and figure descriptions, and chunks are cached on disk to reuse completed ingestion steps.</dd>
+                  <dt>Inspecting model behavior</dt><dd>LangSmith instrumentation traces retrieval and model calls with session and model metadata.</dd>
+                </dl>
+                <p class="project-scope"><strong>Current scope:</strong> A locally run personal project. Ollama supports local chat and embeddings; ingestion still uses Gemini for table and figure descriptions.</p>
+              </details>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-index">03</div>
+            <div class="work-main"><p class="work-type">HPI · COLLABORATIVE RESEARCH SOFTWARE</p><h3>MaskBench</h3><p>A benchmark framework that measures how masking affects pose-estimation accuracy and motion fidelity. It gives researchers a repeatable way to compare masking strategies and select an approach for behavioral analysis.</p><p class="contribution"><strong>My contribution.</strong> I co-developed the benchmarking infrastructure, integrating 7+ pose-estimation models and parallelized, cached processing for 100GB+ video datasets.</p><div class="tags"><span>Pose estimation</span><span>Benchmarking</span><span>Python</span></div><a class="work-link" href="https://github.com/maskbench/maskbench" target="_blank" rel="noopener noreferrer">View project code</a>
+              <details class="project-flow">
+                <summary>Architecture and evaluation</summary>
+                <div class="project-architecture">
+                  <ol class="architecture-steps" aria-label="MaskBench processing pipeline">
+                    <li><strong>Dataset</strong><span>Videos and optional ground-truth poses</span></li>
+                    <li><strong>Inference engine</strong><span>YOLO, MediaPipe, OpenPose, and MaskAnyone variants</span></li>
+                    <li><strong>Evaluator</strong><span>PCK, RMSE, distance, velocity, acceleration, and jerk</span></li>
+                    <li><strong>Visualizer</strong><span>Result tables, pose plots, and timing comparisons</span></li>
+                  </ol>
+                </div>
+                <dl class="engineering-notes">
+                  <dt>Reusable runs</dt><dd>Checkpoints retain intermediate results; the renderer produces annotated videos for inspection.</dd>
+                  <dt>MaskAnyone integration</dt><dd>The connected pipeline uses YOLO detection and SAM2 segmentation with OpenPose or MediaPipe pose estimation.</dd>
+                  <dt>Collaboration</dt><dd>Collaborators include Tim Riedel, Zainab Zafari, Wim Pouw, and Gerard de Melo.</dd>
+                </dl>
+                <a class="work-link" href="https://maskbench.github.io/maskbench/" target="_blank" rel="noopener noreferrer">Read the technical report</a>
+              </details>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="research-section wrap" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / RESEARCH &amp; OPEN SOURCE</p><h2 id="research-title">Tools for understanding<br />human behavior.</h2></div>
+          <p>Collaborative work in gesture detection, multimodal analysis, and privacy-preserving video research.</p>
+        </div>
+        <p class="research-context"><strong>Community context.</strong> <a href="https://www.envisionbox.org/" target="_blank" rel="noopener noreferrer">EnvisionBOX</a> shares tools and learning resources for multimodal analysis, helping newcomers use research methods and reproduce workflows. It provides the broader community context for tools such as EnvisionHGdetector and Gesture Challenge.</p>
+        <div class="work-list">
+          <article class="work-card">
+            <div class="work-index">01</div>
+            <div class="work-main"><p class="work-type">RESEARCH INFRASTRUCTURE · HASSO PLATTNER INSTITUTE</p><h3>Gesture Challenge 2026</h3><p>Gesture Challenge 2026 brings seven corpora, four languages, and 109 speakers into a shared benchmark for co-speech gesture detection.</p><p class="contribution"><strong>My contribution.</strong> I lead the challenge, curate anonymized kinematic data, and develop standardized processing and evaluation infrastructure.</p><div class="tags"><span>Computer vision</span><span>Python</span><span>Benchmarking</span></div><a class="work-link" href="https://www.envisionbox.org/gesture_challenge_2026.html" target="_blank" rel="noopener noreferrer">Explore the challenge</a>
+              <figure class="project-media">
+                <video controls muted playsinline preload="none" width="800" height="150" poster="assets/gesture_challenge.webp" aria-label="Gesture Challenge demonstration showing anonymized body and hand landmarks.">
+                  <source src="assets/gesture_challenge.mp4" type="video/mp4" />
+                  <a href="assets/gesture_challenge.mp4">Download the Gesture Challenge demonstration</a>.
+                </video>
+                <figcaption>Gesture Challenge 2026: anonymized body and hand landmarks from the benchmark data.</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-index">02</div>
+            <div class="work-main"><p class="work-type">OPEN-SOURCE RESEARCH PACKAGE</p><h3>EnvisionHGdetector</h3><p>A Python package for co-speech gesture detection, time-aligned annotations, labeled clips, and kinematic analysis.</p><p class="contribution"><strong>My contribution.</strong> I co-developed the package and co-authored its accompanying research preprint.</p><div class="tags"><span>Computer vision</span><span>Gesture detection</span><span>Python package</span></div><a class="work-link" href="https://github.com/WimPouw/envisionhgdetector" target="_blank" rel="noopener noreferrer">Explore the package</a><figure class="project-media">
+                <video controls muted playsinline preload="none" width="1920" height="1080" poster="assets/envisionhgdetector.webp" aria-label="EnvisionHGdetector: video, gesture predictions, and pose tracking shown together.">
+                  <source src="assets/envisionhgdetector.mp4" type="video/mp4" />
+                  <a href="assets/envisionhgdetector.mp4">Download the project demonstration</a>.
+                </video>
+                <figcaption>EnvisionHGdetector: video, gesture predictions, and pose tracking shown together.</figcaption>
+              </figure></div>
+          </article>
+          <article class="work-card">
+            <div class="work-index">03</div>
+            <div class="work-main"><p class="work-type">OPEN-SOURCE CONTRIBUTION · PRIVACY-PRESERVING AI</p><h3>MaskAnyone</h3><p>A web-based toolbox that combines video and audio masking techniques while retaining information useful for behavioral analysis.</p><p class="contribution"><strong>My contribution.</strong> I help maintain, improve, and test the open-source video de-identification software.</p><div class="tags"><span>Video de-identification</span><span>FastAPI</span><span>React</span><span>Docker</span></div><a class="work-link" href="https://github.com/MaskAnyone/MaskAnyone" target="_blank" rel="noopener noreferrer">Explore the toolbox</a>
+              <figure class="project-media">
+                <video controls muted playsinline preload="none" width="854" height="480" poster="assets/maskanyone.webp" aria-label="MaskAnyone demonstration showing masked people with pose overlays.">
+                  <source src="assets/maskanyone.mp4" type="video/mp4" />
+                  <a href="assets/maskanyone.mp4">Download the MaskAnyone demonstration</a>.
+                </video>
+                <figcaption>MaskAnyone: masking people while retaining pose information for analysis.</figcaption>
+              </figure>
+              <details class="project-flow">
+                <summary>Masking strategies and analytic utility</summary>
+                <dl class="engineering-notes">
+                  <dt>Blur</dt><dd>Softens visual detail.</dd>
+                  <dt>Pixelation</dt><dd>Replaces detail with pixel blocks.</dd>
+                  <dt>Contours</dt><dd>Represents the subject through outlines.</dd>
+                  <dt>Solid fill</dt><dd>Replaces subject appearance with flat regions.</dd>
+                </dl>
+                <p class="project-scope">The research question is which information each strategy retains for behavioral analysis. The published MaskBench comparison used three source videos and found that pose-estimation performance depended on the masking strategy and estimator.</p>
+                <a class="work-link" href="https://maskbench.github.io/maskbench/" target="_blank" rel="noopener noreferrer">Explore the evaluation results</a>
+              </details>
+            </div>
+          </article>
+        </div>
+        <div class="research-publication" id="publication" aria-labelledby="publication-title">
+          <p class="eyebrow">CO-AUTHORED PREPRINT · 2025</p>
+          <h3 id="publication-title">EnvisionHGdetector: A Computational Framework for Co-Speech Gesture Detection, Kinematic Analysis, and Interactive Visualization</h3>
+          <a class="work-link" href="https://doi.org/10.31234/osf.io/psg5f_v2" target="_blank" rel="noopener noreferrer">Read the preprint</a>
+        </div>
+        <div class="community-entry" aria-labelledby="community-title">
+          <div><p class="eyebrow">COMMUNITY INVOLVEMENT</p><h3 id="community-title">EnvisionBOX summer schools</h3></div>
+          <div>
+            <p>I assisted with technical setup and troubleshooting at two EnvisionBOX summer schools, mainly supporting participants using MaskAnyone, MaskBench, and EnvisionHGdetector.</p>
+            <ul class="community-schools">
+              <li><a href="https://github.com/sarkadava/envisionBOX_SummerschoolAmsterdam2025/" target="_blank" rel="noopener noreferrer">EnvisionBOX Summer School 2025 · University of Amsterdam · 23-27 June 2025</a></li>
+              <li><a href="https://envisionbox.org/summerschool2026.html" target="_blank" rel="noopener noreferrer">MDIG2026 · Tilburg University · <time datetime="2026-07-13">13</time>-<time datetime="2026-07-17">17 July 2026</time></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="additional-work wrap" aria-label="Other projects and early ideas">
+        <details class="other-projects" aria-labelledby="other-projects-title">
+          <summary id="other-projects-title">Other projects</summary>
+          <article class="other-project">
+            <div><p class="work-type">2022-2023 · LUMS TEAM PROJECT</p><h4>Early Forest Fire Detection System</h4></div>
+            <div><p>Co-developed a fire and smoke detection system for live PTZ camera feeds, with a dashboard for maps, camera controls, and monitoring. My work included dashboard and backend development; our 2023 report documents deployment at a WWF monitoring station in Pakistan.</p><div class="tags"><span>YOLOv7-tiny</span><span>React</span><span>Django REST Framework</span><span>MySQL</span></div><a class="work-link" href="https://github.com/ShaddAhmed14/EarlyForestFireDetection" target="_blank" rel="noopener noreferrer">View project report</a></div>
+            <div class="project-gallery">
+              <figure class="project-media"><a href="assets/forest-fire-dashboard.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size forest fire main dashboard"><img src="assets/forest-fire-dashboard.webp" width="1920" height="832" loading="lazy" decoding="async" alt="Forest fire dashboard showing camera locations on a map, a device list, and recent events." /></a><figcaption>Main dashboard: camera locations, devices, and recent events. Select the image to enlarge.</figcaption></figure>
+              <figure class="project-media"><a href="assets/forest-fire-camera.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the full-size forest fire camera control dashboard"><img src="assets/forest-fire-camera.webp" width="1865" height="916" loading="lazy" decoding="async" alt="Camera control page with pan, tilt, and zoom sliders, a camera feed, map, and event history." /></a><figcaption>Camera control: pan, tilt, zoom, camera feed, and event history. Select the image to enlarge.</figcaption></figure>
+            </div>
+          </article>
+          
+          <article class="other-project">
+            <div><p class="work-type">2022 · COMMUNITY PROJECT</p><h4>BloodLink</h4></div>
+            <div><p>Co-developed a mobile app for the BloodLink department of LUMS Community Service Society to automate outreach for urgent blood requests. It connects request management with email, social media posting, and donor notifications, using OneSignal, Firebase OTP verification, and AyrShare integrations.</p><div class="tags"><span>Flutter</span><span>Express.js</span><span>MongoDB</span></div><a class="work-link" href="https://github.com/ShaddAhmed14/BloodLink" target="_blank" rel="noopener noreferrer">View project code</a></div>
+          </article>
+        </details>
+        <details class="early-ideas">
+          <summary>Early ideas and experiments <span>2022-2023</span></summary>
+          <p class="ideas-intro">An early interest in accessible technology led me to explore how AI could help people use services through the devices and ways of communicating available to them.</p>
+          <article class="other-project">
+            <div><p class="work-type">RESEARCH EXPLORATION</p><h4>Darmaan: assistance over a phone call</h4></div>
+            <div><p>Explored a telephone-based assistant for rural communities with limited smartphone access. The idea was to collect symptoms by voice and support coordination with hospitals before a patient arrived. My work included improving an Urdu keyword-spotting model; limited data and model capabilities kept the wider idea at an early stage.</p></div>
+          </article>
+          <article class="other-project">
+            <div><p class="work-type">CONCEPT</p><h4>Visual assistance for blind people</h4></div>
+            <div><p>Envisioned using image and video models to describe surroundings and support everyday mobility for blind and low-vision people, starting on a phone and eventually moving to glasses.</p></div>
+          </article>
+          <article class="other-project">
+            <div><p class="work-type">CONCEPT</p><h4>Faster typing for spoken communication</h4></div>
+            <div><p>Proposed an app that learns a person's typing patterns and frequently used phrases to reduce the effort of composing messages, then reads them aloud through text-to-speech for people who cannot rely on speech.</p></div>
+          </article>
+        </details>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="wrap about-grid">
+          <div><p class="eyebrow">03 / ABOUT</p><h2 id="about-title">I like owning the <em>whole problem.</em></h2></div>
+          <div class="about-copy">
+            <p>I'm an AI Software Engineer in a working-student role at Hasso Plattner Institute, building full-stack research systems for computer vision, multimodal analysis, and privacy-preserving video datasets.</p>
+            <p>My work spans model integration and benchmarking, data pipelines and APIs, user-facing applications, and reproducible deployment. Recently, I've focused on video de-identification and evaluating how masking affects pose estimation, while building tools to analyze large multilingual video collections.</p>
+            <p>I'm completing an MSc in Data Science at the University of Potsdam, with graduation expected in 2027. My thesis explores gesture detection benchmarks and the temporal alignment of dyadic videos.</p>
+            <div class="current-focus" aria-labelledby="current-focus-title">
+              <h3 id="current-focus-title">Current focus</h3>
+              <dl>
+                <dt>Working on</dt><dd>Multimodal AI, privacy-preserving video analysis, behavioral analysis, and gesture detection.</dd>
+                <dt>Learning and exploring</dt><dd>LLMs, retrieval-augmented generation (RAG), and multi-agent systems through personal projects.</dd>
+              </dl>
+            </div>
+            <div class="skills"><span>Python</span><span>TypeScript</span><span>PyTorch</span><span>FastAPI</span><span>React / Next.js</span><span>RAG</span><span>Docker</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline-section wrap" id="timeline" aria-labelledby="timeline-title">
+        <div class="timeline-heading"><p class="eyebrow">04 / TIMELINE</p><h2 id="timeline-title">The path so far.</h2><p>A few milestones in the work I'm building on.</p></div>
+        <ol class="timeline-list">
+          <li><span class="timeline-year">2022</span><div><h3>Built software with real-world use</h3><p>Worked on an early forest fire detection system with live monitoring and alerts, and a blood donor app released on Google Play.</p></div></li>
+          <li><span class="timeline-year">2023</span><div><h3>From visual AI to data science</h3><p>Built a retail video analysis system, graduated from Lahore University of Management Sciences (LUMS), and began an MSc in Data Science at the University of Potsdam.</p></div></li>
+          <li><span class="timeline-year">2024</span><div><h3>Joined Hasso Plattner Institute</h3><p>Started as an AI intern, working on research software for multimodal video analysis and privacy-preserving AI.</p></div></li>
+          <li><span class="timeline-year">2025</span><div><h3>Growing into research engineering</h3><p>Moved into a working-student AI software engineer role and co-authored the EnvisionHGdetector preprint. <a href="https://doi.org/10.31234/osf.io/psg5f_v2" target="_blank" rel="noopener noreferrer">Read the preprint</a></p></div></li>
+          <li><span class="timeline-year">2026</span><div><h3>Leading Gesture Challenge 2026</h3><p>Helping bring seven gesture datasets into a shared benchmark spanning four languages and 109 speakers. <a href="https://www.envisionbox.org/gesture_challenge_2026.html" target="_blank" rel="noopener noreferrer">Explore the challenge</a></p></div></li>
+        </ol>
+      </section>
+
+      <div class="contact-band">
+      <section class="contact-section wrap" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">05 / CONTACT</p>
+        <h2 id="contact-title">Have a problem worth building?</h2>
+        <p>I'm interested in working-student, internship, and opportunities in AI software engineering, Python backend development, and AI integration. Based in Berlin / Potsdam and open to remote work within Germany.</p>
+        <div class="social-links"><a href="mailto:sharjeelshaikh509@gmail.com">Email</a><a href="https://www.linkedin.com/in/sharjeelahmed14/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/ShaddAhmed14" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+      </section>
+      </div>
+    </main>
+    <footer class="site-footer wrap"><span>© <span id="year">2026</span> Sharjeel Ahmed Shaikh</span></footer>
+  </body>
+</html>
