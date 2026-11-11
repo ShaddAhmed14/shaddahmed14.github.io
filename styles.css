@@ -592,6 +592,34 @@ h1 {
   font-size: 29px;
   line-height: 1.2;
 }
+.project-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.work-card .project-heading h3,
+.other-project .project-heading h4 {
+  min-width: 0;
+  margin: 0;
+}
+.project-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--ink);
+}
+.project-arrow svg {
+  display: block;
+}
+.project-arrow:hover {
+  background: var(--surface);
+}
 .work-main > p:not(.work-type) {
   max-width: 760px;
   margin-bottom: 18px;
